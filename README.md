@@ -9,9 +9,9 @@
 
 
 ### Setup Conda Environment
-use this command to create a conda environment (all the required packages are listed in `temp.yml` file)
+use this command to create a conda environment (all the required packages are listed in `mcadsDecoder_env.yml` file)
 ```
-conda env create -f temp.yml
+conda env create -f mcadsDecoder_env.yml
 ```
 
 
