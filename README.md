@@ -1,7 +1,7 @@
 # MCADS-Decoder
 
 **Rethinking Decoder Design:<br>Improving Biomarker Segmentation Using Depth-to-Space Restoration and Residual Linear Attention**
-***-Accepted in CVPR 2025***
+***- Accepted in CVPR 2025***
 
 
 ### Setup Conda Environment
