@@ -3,10 +3,6 @@
 **temp**
 ***temp***
 
-<a href="#"><img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" /></a>
-<a href="#"><img src="https://img.shields.io/badge/Computational_Pathology-e06666?style=for-the-badge" alt="Computational Pathology"></a>
-
-
 
 ### Setup Conda Environment
 use this command to create a conda environment (all the required packages are listed in `mcadsDecoder_env.yml` file)
