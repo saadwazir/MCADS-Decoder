@@ -43,7 +43,7 @@ use `offline_augmentation.py` to generate augmented samples
 ## Training and Testing
 
 1. Edit the `config.txt` file to set training and testing parameters and define folder paths.
-2. Run the `temp.py` file in a conda environment. It contains the model, training, and testing code.
+2. Run the `mcadsDecoder.py` file in a conda environment. It contains the model, training, and testing code.
 
 
 
