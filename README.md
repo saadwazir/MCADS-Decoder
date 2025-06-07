@@ -4,6 +4,22 @@
 ***- Accepted in CVPR 2025***
 
 
+Download Paper:
+[https://arxiv.org/abs/2504.06158](https://openaccess.thecvf.com/content/CVPR2025/html/Wazir_Rethinking_Decoder_Design_Improving_Biomarker_Segmentation_Using_Depth-to-Space_Restoration_and_CVPR_2025_paper.html)
+
+Please Cite it as following
+
+```
+@InProceedings{Wazir_2025_CVPR,
+    author    = {Wazir, Saad and Kim, Daeyoung},
+    title     = {Rethinking Decoder Design: Improving Biomarker Segmentation Using Depth-to-Space Restoration and Residual Linear Attention},
+    booktitle = {Proceedings of the Computer Vision and Pattern Recognition Conference (CVPR)},
+    month     = {June},
+    year      = {2025},
+    pages     = {30861-30871}
+}
+```
+
 ### Setup Conda Environment
 use this command to create a conda environment (all the required packages are listed in `mcadsDecoder_env.yml` file)
 ```
