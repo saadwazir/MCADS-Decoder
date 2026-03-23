@@ -10,16 +10,23 @@ https://openaccess.thecvf.com/content/CVPR2025/html/Wazir_Rethinking_Decoder_Des
 Please Cite it as following
 
 ```
-@InProceedings{Wazir_2025_CVPR,
-    author    = {Wazir, Saad and Kim, Daeyoung},
-    title     = {Rethinking Decoder Design: Improving Biomarker Segmentation Using Depth-to-Space Restoration and Residual Linear Attention},
-    booktitle = {Proceedings of the Computer Vision and Pattern Recognition Conference (CVPR)},
-    month     = {June},
-    year      = {2025},
-    pages     = {30861-30871}
+@inproceedings{wazir2025rethinking,
+  title={Rethinking decoder design: Improving biomarker segmentation using depth-to-space restoration and residual linear attention},
+  author={Wazir, Saad and Kim, Daeyoung},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={30861--30871},
+  year={2025},
+  doi = {10.48550/arXiv.2506.18335},
+  url = {https://doi.org/10.48550/arXiv.2506.18335}
 }
 ```
+_____________________________________________________________________________
 
+<img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTUwN2E2czJlZjdsOWZwZnkwdnVoZTBzbHNvOHk1cml6bGM0NXF4bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/O7BtZQ0ceoVz4pDdC7/giphy.gif" width="100" /> Experimental Results* on the [MedCAGD-Dataset-Collection](https://huggingface.co/datasets/saadwazir/MedCAGD-Dataset-Collection)
+
+
+
+_____________________________________________________________________________
 ### Setup Conda Environment
 use this command to create a conda environment (all the required packages are listed in `mcadsDecoder_env.yml` file)
 ```
