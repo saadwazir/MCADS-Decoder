@@ -320,6 +320,10 @@ Parameters for processing full-size images and masks:
   
 ```
 resize_full_images=True #if resize_full_images=False then full-size images are not scaled down, but evaluation takes more time.
+
+
+## Acknowledgement
+We gratefully acknowledge the prior contributions of the research community, which have provided the foundation for our framework.
 ```
 
 
