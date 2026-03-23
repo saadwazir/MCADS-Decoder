@@ -24,7 +24,7 @@ _____________________________________________________________________________
 
 <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTUwN2E2czJlZjdsOWZwZnkwdnVoZTBzbHNvOHk1cml6bGM0NXF4bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/O7BtZQ0ceoVz4pDdC7/giphy.gif" width="100" /> Experimental Results* on the [MedCAGD-Dataset-Collection](https://huggingface.co/datasets/saadwazir/MedCAGD-Dataset-Collection)
 
-
+![Experimental Results* on the MedCAGD-Dataset-Collection](./results.png)
 
 _____________________________________________________________________________
 ### Setup Conda Environment
