@@ -24,8 +24,12 @@ _____________________________________________________________________________
 
 <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTUwN2E2czJlZjdsOWZwZnkwdnVoZTBzbHNvOHk1cml6bGM0NXF4bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/O7BtZQ0ceoVz4pDdC7/giphy.gif" width="100" /> Experimental Results* on the [MedCAGD-Dataset-Collection](https://huggingface.co/datasets/saadwazir/MedCAGD-Dataset-Collection)
 
+Download Dataset from Huggingface. Link: (https://huggingface.co/datasets/saadwazir/MedCAGD-Dataset-Collection)
+
 ![Experimental Results* on the MedCAGD-Dataset-Collection](./results.png)
 
+Research Note *
+This dataset collection provides early access to the datasets used for benchmarking segmentation models across multiple medical imaging datasets. The benchmark results for the methods evaluated on these datasets are currently under review and have not yet been published. The segmentation benchmarks associated with this dataset collection are part of ongoing research related to the MCADS decoder and the upcoming MedCAGD framework. The full benchmark results and evaluation protocols will appear in the MedCAGD paper, which is currently under review, and additional results will be released after the review process.
 _____________________________________________________________________________
 ### Setup Conda Environment
 use this command to create a conda environment (all the required packages are listed in `mcadsDecoder_env.yml` file)
