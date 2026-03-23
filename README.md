@@ -24,12 +24,201 @@ _____________________________________________________________________________
 
 <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTUwN2E2czJlZjdsOWZwZnkwdnVoZTBzbHNvOHk1cml6bGM0NXF4bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/O7BtZQ0ceoVz4pDdC7/giphy.gif" width="100" /> Experimental Results* on the [MedCAGD-Dataset-Collection](https://huggingface.co/datasets/saadwazir/MedCAGD-Dataset-Collection)
 
-Download Dataset from Huggingface. Link: (https://huggingface.co/datasets/saadwazir/MedCAGD-Dataset-Collection)
+Download Dataset from Huggingface. Link: https://huggingface.co/datasets/saadwazir/MedCAGD-Dataset-Collection
 
-![Experimental Results* on the MedCAGD-Dataset-Collection](./results.png)
+<table style="width:100%; border-collapse: collapse; text-align: center;" border="1">
+  <caption style="font-weight: bold; margin-bottom: 8px;">TABLE 1: ACDC DATASET RESULTS (MULTI-CLASS SEMANTIC SEGMENTATION TASK)</caption>
+  <thead>
+    <tr style="background-color: #f2f2f2;">
+      <th>Method</th>
+      <th>Dice ↑</th>
+      <th>IoU ↑</th>
+      <th>HD95 ↓</th>
+      <th>RV</th>
+      <th>Myo</th>
+      <th>LV</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>U-Net</td>
+      <td>81.56</td>
+      <td>73.41</td>
+      <td>6.9854</td>
+      <td>76.99</td>
+      <td>80.28</td>
+      <td>87.43</td>
+    </tr>
+    <tr>
+      <td><strong>MCADS</strong></td>
+      <td><strong>84.51</strong></td>
+      <td><strong>76.92</strong></td>
+      <td><strong>5.5595</strong></td>
+      <td><strong>81.16</strong></td>
+      <td><strong>83.27</strong></td>
+      <td><strong>89.09</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="width:100%; border-collapse: collapse; text-align: center;" border="1">
+  <caption style="font-weight: bold; margin-bottom: 8px;">TABLE 2: SYNAPSE DATASET RESULTS (MULTI-CLASS SEMANTIC SEGMENTATION TASK)</caption>
+  <thead>
+    <tr style="background-color: #f2f2f2;">
+      <th>Method</th>
+      <th>Dice ↑</th>
+      <th>IoU ↑</th>
+      <th>HD95 ↓</th>
+      <th>Aorta</th>
+      <th>GB</th>
+      <th>KL</th>
+      <th>KR</th>
+      <th>Liver</th>
+      <th>PC</th>
+      <th>SP</th>
+      <th>SM</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>U-Net</td>
+      <td>70.11</td>
+      <td>59.39</td>
+      <td>44.69</td>
+      <td>84.00</td>
+      <td>56.70</td>
+      <td>72.41</td>
+      <td>62.64</td>
+      <td>86.98</td>
+      <td>48.73</td>
+      <td>81.48</td>
+      <td>67.96</td>
+    </tr>
+    <tr>
+      <td><strong>MCADS</strong></td>
+      <td><u>85.03</u></td>
+      <td><u>81.71</u></td>
+      <td><strong>11.11</strong></td>
+      <td>90.81</td>
+      <td><u>86.07</u></td>
+      <td>86.77</td>
+      <td>83.24</td>
+      <td>87.66</td>
+      <td><strong>83.55</strong></td>
+      <td>85.74</td>
+      <td>76.38</td>
+    </tr>
+    <tr>
+      <td>Self-Prompt SAM</td>
+      <td><strong>86.74</strong></td>
+      <td>-</td>
+      <td>-</td>
+      <td><strong>91.99</strong></td>
+      <td>69.95</td>
+      <td><strong>85.65</strong></td>
+      <td><strong>85.40</strong></td>
+      <td><strong>97.39</strong></td>
+      <td>79.18</td>
+      <td><strong>94.38</strong></td>
+      <td><strong>89.94</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+
+<table style="width:100%; border-collapse: collapse; text-align: center;" border="1">
+  <caption style="font-weight: bold; margin-bottom: 8px;">TABLE 3: RESULTS ON MULTIPLE DATASETS (BINARY SEMANTIC SEGMENTATION TASK)</caption>
+  <thead>
+    <tr style="background-color: #f2f2f2;">
+      <th rowspan="2">Method</th>
+      <th rowspan="2">Params ↓</th>
+      <th rowspan="2">Flops ↓</th>
+      <th colspan="2">Skin</th>
+      <th colspan="2">Polyp</th>
+      <th colspan="2">Fundus</th>
+      <th colspan="2">Neoplasm</th>
+      <th>Cell</th>
+      <th>All</th>
+    </tr>
+    <tr style="background-color: #f2f2f2;">
+      <th>ISIC17</th>
+      <th>ISIC18</th>
+      <th>ETIS</th>
+      <th>ColonDB</th>
+      <th>DRIVE</th>
+      <th>FIVES</th>
+      <th>BUSI</th>
+      <th>ThyroidXL</th>
+      <th>CellSeg</th>
+      <th>Avg</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>U-Net</td>
+      <td>34.53 M</td>
+      <td>65.53 G</td>
+      <td>83.07</td>
+      <td>86.67</td>
+      <td>76.85</td>
+      <td>83.95</td>
+      <td>71.20</td>
+      <td>75.77</td>
+      <td>74.04</td>
+      <td>71.16</td>
+      <td>71.52</td>
+      <td>77.14</td>
+    </tr>
+    <tr>
+      <td><strong>MCADS</strong></td>
+      <td>50.90 M</td>
+      <td>61.89 G</td>
+      <td><strong>84.14</strong></td>
+      <td><u><strong>91.01</strong></u></td>
+      <td><u><strong>92.24</strong></u></td>
+      <td><strong>91.37</strong></td>
+      <td><u><strong>78.42</strong></u></td>
+      <td><strong>76.05</strong></td>
+      <td><strong>80.03</strong></td>
+      <td><u><strong>86.33</strong></u></td>
+      <td><strong>86.68</strong></td>
+      <td><u>85.14</u></td>
+    </tr>
+    <tr>
+      <td>AutoSam</td>
+      <td>41.56 M</td>
+      <td>25.11 G</td>
+      <td>-</td>
+      <td>-</td>
+      <td>79.70</td>
+      <td>83.00</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Medical SAM3</td>
+      <td>840.0 M</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>86.10</td>
+      <td>-</td>
+      <td>55.80</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
 
 Research Note *
-This dataset collection provides early access to the datasets used for benchmarking segmentation models across multiple medical imaging datasets. The benchmark results for the methods evaluated on these datasets are currently under review and have not yet been published. The segmentation benchmarks associated with this dataset collection are part of ongoing research related to the MCADS decoder and the upcoming MedCAGD framework. The full benchmark results and evaluation protocols will appear in the MedCAGD paper, which is currently under review, and additional results will be released after the review process.
+This dataset collection provides early access to the datasets used for benchmarking segmentation models across multiple medical imaging datasets. The segmentation benchmarks associated with this dataset collection are part of ongoing research related to the MCADS decoder and the upcoming MedCAGD framework. The full benchmark results and evaluation protocols will appear in the MedCAGD paper, which is currently under review, and additional results will be released after the review process.
 _____________________________________________________________________________
 ### Setup Conda Environment
 use this command to create a conda environment (all the required packages are listed in `mcadsDecoder_env.yml` file)
